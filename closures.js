@@ -220,18 +220,18 @@ function timeOutCounter() {
 
   for (let i=0; i <= 5; i++) {
     
-    function call() {
+    function call(val) {
 
       setTimeout(function () {
         
         
-        console.log(i);
+        console.log(val);
           
         }, i * 1000);
         
       
     }
+    call(i)
   }
-
 }
 timeOutCounter();
